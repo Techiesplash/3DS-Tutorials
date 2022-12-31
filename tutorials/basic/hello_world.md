@@ -40,6 +40,7 @@ Okay, so we now have a main loop... How do we exit back to the Homebrew Launcher
 Simple. We can scan for input, and break if it detects a button, in this case START, being pressed.
 
 We can scan for input with hidScanInput(), and get which keys are down with hidKeysDown() like so:
+
 ![Failed to load image](../../assets/devkitpro_helloworld_progress_2.png)
 
 Every button is mapped to a different bit on the unsigned 32-bit integer.
