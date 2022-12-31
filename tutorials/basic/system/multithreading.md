@@ -12,16 +12,16 @@ A thread would call another function, similar to the main() function.
 
 Create another function like this right above main():
 
-![Failed to load image](../../assets/devkitpro_multithreading_progress_0.png)
+![Failed to load image](../../../assets/devkitpro_multithreading_progress_0.png)
 
 Inside the threadMain() function, we need a loop to control when the thread stops.
 
-![Failed to load image](../../assets/devkitpro_multithreading_progress_1.png)
+![Failed to load image](../../../assets/devkitpro_multithreading_progress_1.png)
 ### Adding a delay
 
 Threads can be paused for a specified amount of nanoseconds with svcSleepThread(). In this case, the thread will run every one second, printing "Hello from threadMain()!":
 
-![Failed to load image](../../assets/devkitpro_multithreading_progress_2.png)
+![Failed to load image](../../../assets/devkitpro_multithreading_progress_2.png)
 ### Using the thread
 
 To run our thread, we must create it in main(). It must have a higher priority (lower value) than the main() thread, otherwise problems will occur.
@@ -30,7 +30,7 @@ We can also specify the size of the stack for our thread.
 
 The thread can be created like this, first fetching the priority of main(), and creating one lower than that set to threadMain():
 
-![Failed to load image](../../assets/devkitpro_multithreading_progress_3.png)
+![Failed to load image](../../../assets/devkitpro_multithreading_progress_3.png)
 
 The thread will now run independently of the main loop, so there is nothing more to do to set it up.
 ## Deinitializing a thread
@@ -41,9 +41,9 @@ First we set runThreads to false, stopping the threads safely.
 
 Then, we deinitialize the thread:
 
-![Failed to load image](../../assets/devkitpro_multithreading_progress_4.png)
+![Failed to load image](../../../assets/devkitpro_multithreading_progress_4.png)
 ## Wrapping up
 
 With that finished, the code should look somewhat like this:
 
-![Failed to load image](../../assets/devkitpro_multithreading_progress_fin.png)
+![Failed to load image](../../../assets/devkitpro_multithreading_progress_fin.png)

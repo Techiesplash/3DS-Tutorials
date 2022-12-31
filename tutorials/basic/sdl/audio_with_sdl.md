@@ -51,5 +51,42 @@ You can specify certain effects on channels, like changing volume.
 
 Music is played through a single master channel, and thus only one can be played.
 
-## Implementing a sound
+## Getting Ready to Play Audio
+Now that we have gone over some terms, we need to first make preparations.
 
+First we need to initialize SDL's Audio subsystem. We do this by adding ```SDL_INIT_AUDIO``` to SDL_Init:
+
+![Failed to load image](../../../assets/devkitpro_sdl_audio_with_sdl_progress_0.png)
+
+If you want to initialize more than that, you can chain them together by using the Bitwise OR operator ```|```:
+
+![Failed to load image](../../../assets/devkitpro_sdl_audio_with_sdl_progress_1.png)
+
+We need to specify how we want the audio. This can return a value below zero, indicating that an error has occured. This example checks for that and prints it to the screen:
+
+![Failed to load image](../../../assets/devkitpro_sdl_audio_with_sdl_progress_2.png)
+
+## Playing a Sound Sample
+Time to load the audio:
+
+![Failed to load image](../../../assets/devkitpro_sdl_audio_with_sdl_progress_3.png)
+
+And play it too, on an auto-selected channel and on repeat:
+
+![Failed to load image](../../../assets/devkitpro_sdl_audio_with_sdl_progress_4.png)
+
+And when we are finished, we free it like so:
+
+![Failed to load image](../../../assets/devkitpro_sdl_audio_with_sdl_progress_5.png)
+
+## Streaming Audio as Music
+
+It's really almost the same; Just some renaming, and a lack of channels to deal with or specify:
+
+![Failed to load image](../../../assets/devkitpro_sdl_audio_with_sdl_progress_0_mus.png)
+
+And free it similarly as well:
+
+![Failed to load image](../../../assets/devkitpro_sdl_audio_with_sdl_progress_1_mus.png)
+
+That's basically all you need to start with. There are more complicated things that can be done, but for the sake of brevity, they will be in a different page.

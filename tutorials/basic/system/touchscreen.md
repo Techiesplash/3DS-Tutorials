@@ -9,7 +9,7 @@ To find the touch position, we need to request the touchPosition type from the O
 
 We must first create a touchPosition like so:
 
-![Failed to load image](../../assets/devkitpro_touchscreen_progress_0.png)
+![Failed to load image](../../../assets/devkitpro_touchscreen_progress_0.png)
 
 The touch position is stored in our touchPosition as 'px' and 'py'.
 ## Printing the information to the screen
@@ -18,13 +18,13 @@ To print the position so we may see it, we should, instead of spamming the conso
 
 This would make it much easier to read, although we would need some whitespace after it to prevent anything getting printed without overwriting:
 
-![Failed to load image](../../assets/devkitpro_touchscreen_progress_1.png)
+![Failed to load image](../../../assets/devkitpro_touchscreen_progress_1.png)
 
 The position should default to [0, 0] when no touch is found:
 
-![Failed to load image](../../assets/devkitpro_touchscreen_progress_demo.png)
+![Failed to load image](../../../assets/devkitpro_touchscreen_progress_demo.png)
 
 ## Wrapping up
 
 Our code should now look like this:
-![Failed to load image](../../assets/devkitpro_touchscreen_progress_fin.png)
+![Failed to load image](../../../assets/devkitpro_touchscreen_progress_fin.png)

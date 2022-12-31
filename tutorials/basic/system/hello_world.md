@@ -25,14 +25,14 @@ To initialize the console, we need to run consoleInit([SCREEN HERE], NULL).
 Replace '[SCREEN HERE]' with either GFX_TOP or GFX_BOTTOM, depending on what screen you want.
 
 At this point, the code should look something like this:
-![Failed to load image](../../assets/devkitpro_helloworld_progress_0.png)
+![Failed to load image](../../../assets/devkitpro_helloworld_progress_0.png)
 
 As the console is now ready, you can now print to the screen. You can use puts(), printf(), std::cout, etc.
 
 If we try and run it now, it should immediately close itself, as there is no main loop.
 
 To create a main loop, we create a while loop with aptMainLoop() as its argument:
-![Failed to load image](../../assets/devkitpro_helloworld_progress_1.png)
+![Failed to load image](../../../assets/devkitpro_helloworld_progress_1.png)
 ## Input
 
 Okay, so we now have a main loop... How do we exit back to the Homebrew Launcher?
@@ -41,19 +41,19 @@ Simple. We can scan for input, and break if it detects a button, in this case ST
 
 We can scan for input with hidScanInput(), and get which keys are down with hidKeysDown() like so:
 
-![Failed to load image](../../assets/devkitpro_helloworld_progress_2.png)
+![Failed to load image](../../../assets/devkitpro_helloworld_progress_2.png)
 
 Every button is mapped to a different bit on the unsigned 32-bit integer.
 
 We can get specific keys via an AND operation between the integer and the desired key:
 
-![Failed to load image](../../assets/devkitpro_helloworld_progress_3.png)
+![Failed to load image](../../../assets/devkitpro_helloworld_progress_3.png)
 ## Wrapping up
 
 We can add V-Sync with gspWaitForVBlank(), which may help if you want that and don't want to draw anything aside from the console. You can disregard this if you want:
 
-![Failed to load image](../../assets/devkitpro_helloworld_progress_4.png)
+![Failed to load image](../../../assets/devkitpro_helloworld_progress_4.png)
 
 And we are done. You can run the program, and get the words 'Hello, World!' printed on the screen:
 
-![Failed to load image](../../assets/devkitpro_helloworld_progress_5.png)
+![Failed to load image](../../../assets/devkitpro_helloworld_progress_5.png)
