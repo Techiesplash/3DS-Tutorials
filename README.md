@@ -28,7 +28,7 @@ Note: No programmable pipeline.
 # Advanced
 ### Meant for those who know what they are doing
 
-## Using Citro3D
-## Programming PICA200 Shaders
-## Playing Audio through NDSP
-## Streaming Audio through NDSP
+## Using Citro3D?
+## Programming PICA200 Shaders?
+## Playing Audio through NDSP?
+## Streaming Audio through NDSP?
