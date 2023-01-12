@@ -25,6 +25,7 @@ To initialize the console, we need to run consoleInit([SCREEN HERE], NULL).
 Replace '[SCREEN HERE]' with either GFX_TOP or GFX_BOTTOM, depending on what screen you want.
 
 At this point, the code should look something like this:
+
 ![Failed to load image](../../../assets/devkitpro_helloworld_progress_0.png)
 
 As the console is now ready, you can now print to the screen. You can use puts(), printf(), std::cout, etc.
@@ -32,6 +33,7 @@ As the console is now ready, you can now print to the screen. You can use puts()
 If we try and run it now, it should immediately close itself, as there is no main loop.
 
 To create a main loop, we create a while loop with aptMainLoop() as its argument:
+
 ![Failed to load image](../../../assets/devkitpro_helloworld_progress_1.png)
 ## Input
 
